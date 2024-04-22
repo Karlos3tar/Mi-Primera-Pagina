@@ -1,0 +1,212 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+header{
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+  background-color: #0090f018;
+  align-items: center;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+
+
+/*es para dar forma al cuadro del login*/
+.form{
+  background-color: rgba(125, 125, 126, 0.377);
+  margin: auto;
+    width: 99%;
+    max-width: 324px;
+    padding: 0.5em 3em;
+    border-radius: 34px;
+  box-shadow: 0 5px 10px -5px 0 rgb(0 0 0 30%);
+  text-align: center;
+}
+
+
+.form__title{
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+.form__paraghaph{
+  font-weight: 300;
+
+}
+.form__link{
+  font-weight: #0000;
+}
+.form__container{
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+.form__group{
+  position: relative;
+  --color: #5757577e;
+}
+.form__input{
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 1rem;
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+
+}
+
+
+.form__input:not(:placeholder-shown){
+  color: #4d4646;
+}
+
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label{
+  transform: translateY(-12px) scale(.7);
+  transform-origin: left top;
+  color: rgb(68, 0, 255);
+
+}
+
+.form__label{
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform .5s, color .3s;
+
+}
+.form__submit{
+  background: #3866f2;
+  color: #ffff;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: .8em 0;
+  border: none;
+  border-radius: .5em;
+
+}
+.form__line{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #3866f2;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform .4s;
+
+}
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown) ~ .form__label{
+transform: scale(1);
+
+}
+@media (max-width:425px) {
+  .form__title{
+      font-size: 1.8rem
+  }
+
+}
+.form__title{
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+.form__paraghaph{
+  font-weight: 300;
+
+}
+.form__link{
+  font-weight: #0000;
+}
+.form__container{
+  margin-top: 1em;
+  display: grid;
+  gap: 2.5em;
+}
+.form__group{
+  position: relative;
+  --color: #5757577e;
+}
+
+.infor__input{
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 1rem;
+  padding: .6em .3e;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid  var(--color);
+
+}
+
+.form__label{
+  color: var(--color);
+  cursor:pointer
+}
+
+
+body{
+  background-image: url(../imagen/fondo.jpg.jpg);
+  background-size: cover;
+  background-position: center;
+
+  font-family: sans-serif;
+  margin: 64px;
+}
+a{
+  text-decoration: none;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #e0d8d885;
+  box-shadow: 0 8px 50px -20px rgb(0, 0, 0);
+  z-index: 2;}
+nav a{
+   font-weight: 600;
+  padding-right: 10px;
+}   
+nav a:hover{
+  color: blue;
+}
+.logo h1 b{
+  color: blue;
+}
+.logo h1{
+  color: black;
+}
+.form_title{
+  font-size: 300;
+}
